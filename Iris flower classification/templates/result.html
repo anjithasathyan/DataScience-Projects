@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <title>Flower Prediction</title>
+        <link rel="stylesheet" href="/static/css/result.css">
+    </head>
+<body background="/static/images/flower.jpg"></body>
+    <center>
+        <h1 id ="heading"><u> PREDICTION RESULT </u></h1> <br><br>
+        
+        {% if data == 0 %}
+              <h1> Iris-Setosa </h1>
+              <img src='/static/images/Iris-Setosa.png'>
+        {% elif data == 1 %}
+              <h1> Iris-Versicolor </h1>
+              <img src='/static/images/iris-Versicolor.png'>
+        {% else %}
+              <h1> Iris-Virginica </h1>
+              <img src='/static/images/iris-Virginica.png'>
+        {% endif %}
+
+        <br><br>
+    <a href='/'> Back </a>
+    </center>
+</body>
+</html>

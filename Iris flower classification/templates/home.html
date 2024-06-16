@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IRIS FLOWER PREDICTION</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body background="/static/images/flower.jpg">
+        
+        <div class = "input form">
+        <form action="{{url_for('predict')}}", method="post">
+            <h1 id ="heading"><u> IRIS FLOWER PREDICTION </u></h1> <br><br>
+            Sepal Length: <input type="text" name="SL" placeholder="Sepal Length"> <br><br>
+            Sepal Width: <input type="text" name="SW" placeholder="Sepal Width">  <br><br>
+            Petal Length: <input type="text" name="PL" placeholder="Petal Length"> <br><br>
+            Petal Width: <input type="text" name="PW" placeholder="Petal Width">   <br><br><br>
+        
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    
+</body>
+</html>
